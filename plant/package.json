@@ -1,15 +1,12 @@
 {
-  "name": "your-project",
+  "name": "tst-project",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "node build.js",
+    "dev": "echo 'Add your development command here'",
+    "start": "serve public -s"
   },
   "dependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "next": "latest"
+    "serve": "^14.0.0"
   }
 }
