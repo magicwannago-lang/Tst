@@ -2,11 +2,10 @@
   "name": "tst-project",
   "version": "1.0.0",
   "scripts": {
-    "build": "node build.js",
-    "dev": "echo 'Add your development command here'",
-    "start": "serve public -s"
+    "build": "mkdir -p public && cp -r ./* public/ 2>/dev/null || true && echo '{\"version\": 1}' > public/config.json",
+    "dev": "echo 'No dev server' && exit 1",
+    "start": "npx serve public -s"
   },
-  "dependencies": {
-    "serve": "^14.0.0"
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }
